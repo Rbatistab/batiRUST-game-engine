@@ -6,3 +6,15 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+[lib]
+name = "game_engine_lib"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "bati_rust_game_engine"
+path = "src/bin/engine.rs"
+
+[[test]]
+name = "integration_tests"
+path = "test/lib.rs"
